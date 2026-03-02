@@ -1,0 +1,33 @@
+fun calc(a: Long, b: Long, c: Int){
+    when(c) {
+        1 -> println("Ваш результат: ${a+b}")
+        2 -> println("Ваш результат: ${a-b}")
+        3 -> println("Ваш результат: ${a*b}")
+        4 -> println("Ваш результат: ${a/b}")
+    }
+
+
+}
+// 1 сложение
+// 2 вычитание
+// 3 умножение
+// 4 деление
+fun main(){
+    println("1 - сложение")
+    println("2 - вычитание")
+    println("3 - умножение")
+    println("4 - деление")
+    println("Введите первое число")
+    val number1 = readln().toLong()
+    println("Введите второе число")
+    val number2 = readln().toLong()
+    println("Введите номер операции")
+    val oper: Int =  readln().toInt()
+    if (oper >= 5 ){
+        println("ОШИБКА")
+
+    }
+    calc(number1,number2,oper)
+
+
+}
